@@ -109,3 +109,15 @@ Use this command to find computers where a specific user has sessions.
 - Invoke-UserHunter -CheckAccess
 Use this command to find computers where a domain admin is logged in and current user has access.
 ```
+
+## Access Control Lists (ACL) Enumeration
+```
+- Get-ObjectAcl -SamAccountName "users" -ResolveGUIDs
+Use this command to enumerate the ACLs for the users group.
+
+- Get-NetGPO | %{Get-ObjectAcl -ResolveGUIDs -Name $_.Name}
+Use this command to see if there is any user has a modification rights to a GPO.
+
+- Get-ObjectAcl -SamAccountName labuser -ResolveGUIDs -RightsFilter "ResetPassword"
+Use this command to check if the user “Sarah” has the permission (Reset Password).
+```
