@@ -3,7 +3,11 @@ https://github.com/netspi/PowerUpSQL
 
 ## SQL Instance Enumeration
 ```
-Get-SQLServerInfo -Instance <instance_name>
+- Get-SQLServerInfo -Instance <instance_name>
+Use this command to get more information about the SQL Server.
+
+-  Get-SQLDatabase -Verbose
+Use this to get database list.
 ```
 
 | Attacker Perspective | PowerUpSQL Function |
