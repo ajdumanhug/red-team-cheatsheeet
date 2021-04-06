@@ -90,3 +90,22 @@ Use this command to get all global catalogs for the current forest.
 - Get-NetForestTrust
 Use this command to map the trusts of a forest.
 ```
+
+
+## User Hunting
+```
+- Find-LocalAdminAccess
+Use this command to find all machines on the current domain where the current user has local admin access.
+
+- Invoke-EnumerateLocalAdmin
+Use this command to find local admins on all machines of the domain (needs administrator privs on non-dc machines).
+
+- Invoke-UserHunter
+Use this command to find computers where a domain has logged in.
+
+- Invoke-UserHunter -UserName “Aziz"
+Use this command to find computers where a specific user has sessions.
+
+- Invoke-UserHunter -CheckAccess
+Use this command to find computers where a domain admin is logged in and current user has access.
+```
