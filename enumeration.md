@@ -53,9 +53,6 @@ Use this command to get the last logged user on a computer (Note that it needs a
 
 - Invoke-ShareFinder
 Use this command to find shares on the hosts in the current domain.
-
-- Get-NetDomainTrust
-Use this command to get the trust in the current domain.
 ```
 
 ## Group Policy (GPO) Enumeration
@@ -71,4 +68,25 @@ Use this command to find all computers that ”Aj” has local administrator rig
 
 - Get-NetOU
 Use this command to get all the OUs (Organization Units) in the current domain.
+```
+
+## Forest & Trust Enumeration
+```
+- Get-NetDomainTrust
+Use this command to get a list of all domain trusts for the current domain to map the domain trust.
+
+- Get-NetForest
+Use this command to get details about the current forest.
+
+- Get-NetForest -Forest dampy.com
+Use this command to get details about another forest.
+
+- Get-NetForestDomain
+Use this command to get all the domains in the current forest.
+
+- Get-NetForestCatalog
+Use this command to get all global catalogs for the current forest.
+
+- Get-NetForestTrust
+Use this command to map the trusts of a forest.
 ```
