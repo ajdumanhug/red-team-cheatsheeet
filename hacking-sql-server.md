@@ -10,6 +10,8 @@ Use this command to get more information about the SQL Server.
 Use this to get database list.
 ```
 
+## SQL Server Discover
+
 | Attacker Perspective | PowerUpSQL Function |
 | --- | --- |
 | Unauthenticated | Get-SQLInstanceFile |
